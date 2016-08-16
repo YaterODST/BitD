@@ -134,9 +134,13 @@
 	<input type="radio" value="8" id="playxp8" name="attr_playbook_xp" class="sheet-stresstooth2 sheet-regulartooth2" />
 	<label for="playxp8" class="sheet-stresstooth2 sheet-regulartooth2"></label>
 </div><div class="sheet-markxpdesc"><ul>
-    <li>When you roll a desperate action.</li>
+    <li>Every time you roll a desperate action, mark xp in that action's attribute.</li>
+    At the end of each session, for each item below, mark 1 xp (in your playbook or an attribute) or 2xp if that item occurred multiple times.
+    <br>
+    <br>
     <li><input type="text" value="Enter your playbook's specific way to mark XP here." name="attr_markxp"></li>
-    <li>At end of session, if you've expressed your beliefs, drives, heritage, or background. And also mark xp if you struggled with issues from your vice or traumas during the session.</li>
+    <li>You expressed your beliefs, drives, heritage, or background.</li>
+    <li>You struggled with issues from your vice or traumas during the session.</li>
     </ul></div></div></div><div class="sheet-col40"><div class="sheet-col50b"><div class="sheet-loadheader">Load<div class="sheet-loadcheckholder"><div class="sheet-coinbox">
 	<input type="checkbox" value="None" id="load1" name="attr_load1" />
 	<label for="load1"></label>
@@ -237,7 +241,9 @@
 <li><span class="sheet-lispan">Social plan:</span> Social connection.</li>
 <li><span class="sheet-lispan">Transport plan:</span> Locations / Route.</li>
     </ul></div></div>     
-</div><div class="sheet-col50a"><div class="sheet-attribute"><div class="sheet-attributetitle"> <button type="roll" class="sheet-attributebtn" value='&{template:bitd2}{{charname=@{character_name}}}{{rolltypeimage=http://i.imgur.com/aRCtei7.png}}{{rolltypetext=Insight}}{{roll1value=[[@{hunt1}d6]]}}{{roll2value=[[@{study1}d6]]}}{{roll3value=[[@{survey1}d6]]}}{{roll4value=[[@{tinker1}d6]]}}{{bonusdice=[[?{Bonus dice|0|1}d6]]}}{{zerodice1=[[1d6]]}}{{zerodice2=[[1d6]]}}'>Insight</button></div>
+</div>
+<div class="sheet-col50a">
+    <div class="sheet-attribute"><div class="sheet-attributetitle"> <button type="roll" class="sheet-attributebtn" value='&{template:bitd2}{{charname=@{character_name}}}{{rolltypeimage=http://i.imgur.com/aRCtei7.png}}{{rolltypetext=Insight}}{{roll1value=[[@{hunt1}d6]]}}{{roll2value=[[@{study1}d6]]}}{{roll3value=[[@{survey1}d6]]}}{{roll4value=[[@{tinker1}d6]]}}{{bonusdice=[[?{Bonus dice|0|1}d6]]}}{{zerodice1=[[1d6]]}}{{zerodice2=[[1d6]]}}'>Insight</button></div>
         <input type="radio" value="0" id="insight_zero1" name="attr_insight_xp" class="sheet-stresstooth2 sheet-zero sheet-regulartooth2" checked />
 	<label for="insight_zero1" id="insight_zero" class="sheet-stresstooth2 sheet-zero sheet-zero sheet-regulartooth2"></label>    
     <input type="radio" value="1" id="insightxp1" name="attr_insight_xp"   class="sheet-stresstooth2 sheet-regulartooth2"/>
@@ -252,7 +258,7 @@
         <label for="insightxp5"  class="sheet-stresstooth2 sheet-regulartooth2"></label>
     <input type="radio" value="6" id="insightxp6" name="attr_insight_xp"   class="sheet-stresstooth2 sheet-regulartooth2"/>
 	<label for="insightxp6"  class="sheet-stresstooth2 sheet-regulartooth2"></label>
-</div><div class="sheet-attributepadding"><div class="sheet-attributedotsholder"><div class="sheet-firstdotholder"><div class="sheet-stashbox sheet-attributedot">
+    </div><div class="sheet-attributepadding"><div class="sheet-attributedotsholder"><div class="sheet-firstdotholder"><div class="sheet-stashbox sheet-attributedot">
 	<input type="checkbox" value="1" id="hunt1" name="attr_hunt1" />
 	<label for="hunt1"></label>
 </div></div><div class="sheet-stashbox sheet-attributedot">
@@ -443,7 +449,9 @@
 <li>How can I find [X]?</li>
 <li>What's really going on here?</li>
 <li>Ask about a detail for a plan.</li>
-    </ul></div></div></div><textarea class="sheet-notes" name="attr_notes">Notes.</textarea></div>
+    </ul></div></div>
+</div>
+<textarea class="sheet-notes" name="attr_notes">Notes.</textarea></div>
 
 
 <!-- ROLL TEMPLATES -->
